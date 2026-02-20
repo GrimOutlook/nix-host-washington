@@ -5,8 +5,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
 
     nix-config = {
-      # url = "github:Grimoutlook/nix-config";
-      url = "/home/grim/nix-config";
+      url = "github:Grimoutlook/nix-config";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -23,10 +22,9 @@
       host-info.flake = "github:GrimOutlook/nix-host-washington";
       host.washington = {
         nixos = {
-          modules = [
-          ] ++ (with nix-config.modules.nixos; [
+          modules = with nix-config.modules.nixos; [
             server
-          ]);
+          ];
 
           imports = [
             ./hardware.nix

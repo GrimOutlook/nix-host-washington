@@ -342,14 +342,17 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1771627909,
-        "narHash": "sha256-2CNmRMaa+/UDOXAXK58UQU4WVEQtTl+43T4mLjsOaKU=",
-        "path": "/home/grim/nix-config",
-        "type": "path"
+        "lastModified": 1771628332,
+        "narHash": "sha256-9cFaDSsz9nsN3dh2lLZi5uYkiWawDpT9OAFO+EYRUjI=",
+        "owner": "Grimoutlook",
+        "repo": "nix-config",
+        "rev": "28e67df76257a31a9bb2b114d57317a3e96082e0",
+        "type": "github"
       },
       "original": {
-        "path": "/home/grim/nix-config",
-        "type": "path"
+        "owner": "Grimoutlook",
+        "repo": "nix-config",
+        "type": "github"
       }
     },
     "nix-index-database": {
