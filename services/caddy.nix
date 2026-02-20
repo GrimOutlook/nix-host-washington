@@ -6,7 +6,7 @@
     virtualHosts = {
       "passwords.grimaldifamily.org" = {
         extraConfig = ''
-          reverse_proxy http://washington.home.arpa:${ports.vaultwarden}
+          reverse_proxy http://washington.home.arpa:${builtins.toString ports.vaultwarden}
         '';
       };
     };

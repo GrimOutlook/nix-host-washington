@@ -4,9 +4,31 @@
   pkgs,
   ...
 } @ args:
+let
+  # Ports referenced in `caddy`.
+  ports = {
+    authelia = 50000;
+    calibre-web = 50001;
+    cryptpad = {
+      http = 50001;
+      websocket = 50002;
+    };
+    immich = 50004;
+    komga = 50005;
+    paperless-ngx = 50006;
+    uptime-kuma = 50007;
+    vaultwarden = 50008;
+  };
+in
 {
+  _module.args = {
+    inherit ports;
+  };
+
   imports = [
     ./services/caddy.nix
+    ./services/cryptpad.nix
+    ./services/plex.nix
     ./services/vaultwarden.nix
   ];
 

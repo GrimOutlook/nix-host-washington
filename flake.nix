@@ -5,7 +5,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
 
     nix-config = {
-      url = "path:/home/grim/nix-config";
+      url = "github:Grimoutlook/nix-config";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
