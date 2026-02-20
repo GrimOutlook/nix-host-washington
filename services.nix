@@ -1,17 +1,11 @@
-{
-  modulesPath,
-  lib,
-  pkgs,
-  ...
-} @ args:
 let
   # Ports referenced in `caddy`.
   ports = {
     authelia = 50000;
     calibre-web = 50001;
     cryptpad = {
-      http = 50001;
-      websocket = 50002;
+      http = 50002;
+      websocket = 50003;
     };
     immich = 50004;
     komga = 50005;
